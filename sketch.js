@@ -36,12 +36,12 @@ text("Note: Press the up arrow key to feed the dog bruno ",100,100)
 text("Food stock left: "+foods,100,600)
   //add styles here
   if(foods !== 0){
-if(keyIsDown(UP_ARROW)){
+if(keyWentDown(UP_ARROW)){
   writestock(foods)
   dog.addImage(doghappy)
 }
 if(keyWentUp(UP_ARROW)){
-  writestock(foods)
+ 
   dog.addImage(dogs)
 }
   }
